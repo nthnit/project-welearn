@@ -1,0 +1,122 @@
+.fg-pw {
+    background-image: url(../Image/forgot-pw/bg-forgot.0b0cf29beca099b10f6e.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: row;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.fg-pw-container {
+    background-color: #fff;
+    max-width: 990px;
+    padding: 80px 50px 65px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 2px rgba(40,41,61,.04), 0 4px 8px rgba(96,97,112,.16);
+    position: relative;
+}
+.desc {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: gray;
+    font-size: 20px;
+}
+.logo {
+    position: absolute;
+    width: 50px;
+    top: 30px;
+    left: 30px;
+}
+.form-icon {
+    height: 100%;
+    left: 2.5rem;
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    color: gray;
+    top: 3.5rem;
+}
+/* .form-label {
+    font-size: 20px;
+} */
+.input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 40px;
+    padding-left: 70px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.submit-btn {
+    border: 0;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 4.5rem;
+    width: 13rem;
+    color: #FFF;
+    background-color: #5da9e8;
+    transition-duration: .15s;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.submit-btn:hover {
+    background-color: #2b85c6;
+}
+.back-to-login {
+    color: black;
+    font-size: 20px;
+}
+.back-to-login:hover {
+    color: black;
+}
+.mouse {
+    position: absolute;
+    top: 76%;
+    left: -11%;
+}
+.person {
+    position: absolute;
+    top: 34%;
+    right: -62%;
+}
+.submit-btn:disabled {
+    --tw-text-opacity: 1;
+    background-color: #e5e7eb;
+    color: #c7c9d9;
+    /* pointer-events: none; */
+    
+}
+.wrong-fill {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+.wrong-fill svg{
+    width: 19px;
+    height: auto;
+    margin-right: 10px;
+    color: red;
+    
+}
+.form-false-em .form-label{
+    color: red;
+}
+.form-false-em .input {
+    border:1px solid red;
+}
+.form-false-em .wrong-fill {
+    display: flex;
+}

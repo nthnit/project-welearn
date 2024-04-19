@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="shortcut icon" href="assets/Image/logo/1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/CSS/base.css">
+    <link rel="stylesheet" href="assets/CSS/style-forgot-pw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="fg-pw">
+        <a href="index.html"><img src="assets/Image/logo/1.svg" alt="logo" class="logo" id="logo"></a>
+        
+
+        <div class="fg-pw-container">
+            <img src="assets/Image/forgot-pw/mouse-forgot.3779b60ff1d43ee0d5d5.png" alt="mouse" class="mouse">
+            <img src="assets/Image/forgot-pw/pepole-email.dc841f065e6f75d2dba8.png" alt="person" class="person">
+            <h1 class="title">
+                Forgot your password?
+            </h1>
+            <div class="desc">
+                Enter email to reset password
+            </div>
+            <form action="" class="row needs-validation " id="form" novalidate>
+                <div class="form-group col-12 mb-3">
+                    <label for="user_email" class="form-label">Email</label>
+                    <div class="  email">
+                        <span class="form-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <input type="email" name="user_email" id="user_email" class="form-control input"
+                            placeholder="Enter email here" required>
+                    </div>
+                    <!-- <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    <div class="invalid-feedback" id="emailValidationMessage">Vui lòng nhập email hợp lệ.</div> -->
+                    <span class="wrong-fill" id="emailValidationMessage">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#fa0000" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                        </svg>
+                        This feild is required
+                    </span>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="btn ">
+                        <button id="submit-btn" class="submit-btn" type="submit" disabled>Submit</button>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="login.html" class="back-to-login">Back</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="assets/bootstrap/jquery.slim.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/check-fill.js"></script>
+</body>
+
+</html>

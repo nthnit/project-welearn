@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Welearn</title>
+    <link rel="shortcut icon" href="assets/Image/logo/1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/CSS/base.css">
+    <link rel="stylesheet" href="assets/CSS/style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 bg">
+
+                <img src="assets/Image/login/bg-login.8cc0623d0936024226e4.png" alt="bg">
+
+            </div>
+            <div class="col-6 login">
+                <div class="logo">
+                    <img src="assets/Image/logo/h-logo-cr-cropped.svg" alt="h-logo" class="login-logo">
+                </div>
+                <div class="login-form">
+                    <h1 class="title">
+                        Sign in to WeLearn
+                    </h1>
+                    <p class="desc">
+                        Enter your details below
+                    </p>
+                    <form action="" class="row " id="form" novalidate method="dialog">
+                        <div class="form-group col-12 mb-3">
+                            <label for="user_email" class="form-label-em">Email</label>
+                            <div class="  email input">
+                                <span class="form-icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <input type="email" name="user_email" id="user_email" class="form-control input"
+                                    placeholder="Enter email here" required>
+                            </div>
+                            <span class="wrong-fill wrong-fill-em" id="emailValidationMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#fa0000"
+                                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                                </svg>
+                                This feild is required
+                            </span>
+                        </div>
+
+                        <div class="col-12 mb-3 pw form-group">
+                            <div class="d-flex flex">
+                                <label for="user_pw" class="form-label form-label-pw">Password</label>
+                                <a href="forgot-pw.html" class="text-right">Forgot password?</a>
+                            </div>
+
+                            <div class="input">
+                                <div class="form-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <input type="password" name="user_pw" id="user_pw" class="form-control input"
+                                    placeholder="Enter password here" required>
+                                <div class="form-icon eye" id="see-pw">
+                                    <i class="fa-regular fa-eye"></i>
+                                </div>
+                                <div class="form-icon eye hide" id="hide-pw">
+                                    <i class="fa-regular fa-eye-slash"></i>
+                                </div>
+                            </div>
+                            <span class="wrong-fill wrong-fill-pw" id="pwValidationMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#fa0000"
+                                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                                </svg>
+                                This feild is required
+                            </span>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="btn ">
+                                <button class="login-btn" type="submit" id="submit-btn" disabled>Sign in</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/JS/check-fill.js"></script>
+    <script src="assets/bootstrap/jquery.slim.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        const loginButton = document.querySelector('.login-btn');
+
+        loginButton.addEventListener('click', (event) => {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của nút submit
+            window.location.href = "\choose-user.html"; // Thay đổi URL tại đây
+        });
+
+        const seePW = document.querySelector('#see-pw');
+        const hidePW = document.querySelector('#hide-pw');
+        const pw = document.querySelector('#user_pw');
+
+        seePW.addEventListener('click', (event) => {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của nút submit
+            pw.type = 'text';
+            document.querySelector('#hide-pw').classList.remove('hide');
+            document.querySelector('#see-pw').classList.add('hide');
+        });
+        hidePW.addEventListener('click', (event) => {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của nút submit
+            pw.type = 'password';
+            document.querySelector('#see-pw').classList.remove('hide');
+            document.querySelector('#hide-pw').classList.add('hide');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.tutorials {
+    padding: 2.5rem 5rem;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    margin-bottom: 2.5rem;
+    border-radius: 2rem;
+}
+.tutorials .title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: .75rem;
+    text-align: center;
+}
+
+.tutorials p {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+}
+.tutorials .apo {
+    text-align: center;
+}
+.tutorials .icon {
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tutorials .icon  img {
+    width: 104px;
+    height: 104px;
+}
+.get-apo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-bottom: 1px solid #eef1fa;
+}
+.apo-table {
+    margin-top: 2rem;
+    font-size: .875rem;
+    
+    line-height: 1.25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+}
+.online, .offline, .complete-lesson {
+    background-color: #cce8ff;
+    color: #2576b9;
+    font-weight: 600;
+}
+.percent::first-letter{
+    font-size: 1rem;
+    font-weight: 600;
+}

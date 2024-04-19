@@ -1,0 +1,129 @@
+.nav-bar .about  {
+    background-color: #FFF;
+    color: #8f90a6;
+}
+.nav-bar .about svg path {
+    fill: #8f90a6;
+}
+.top-profile {
+    margin-bottom: 2rem;
+}
+.profile {
+    min-height: calc(100vh - 250px);
+    padding: 2rem 0;
+    border: 1px solid #eee;
+    border-radius: 2rem;
+    color: #2e3a59;
+}
+.profile .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.profile .avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 4px solid #f64b7f;
+    border-radius: 50%;
+}
+.profile .avatar-image {
+    background-image: url(../Image/active/nam.jpg);
+    background-position: center center;
+    width: 112px;
+    height: 112px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+.profile .avatar .tag {
+    position: absolute;
+    bottom: -17px;
+    right: 0;
+    left: 0;
+    /* z-index: 2; */
+    /* background-color: #FFF; */
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+.profile .avatar .inner-tag {
+    padding: .375rem .5rem;
+    border: 1px solid #FFF;
+    background-color: #cce8ff;
+    
+}
+.profile .info  .white-bg {
+    background-color: #FFF;
+    width: 100%;
+    position: absolute;
+    height: 15px;
+    bottom: -5px;
+}
+.info .name {
+    margin-top: 1rem;
+    max-width: 290px;
+    text-align: center;
+    font-weight: 500;
+    color: #2e3a59;
+    font-size: 20px;
+}
+.info .mail {
+    margin-top: .75rem;
+    max-width: 290px;
+    text-align: center;
+    color: #8f90a6;
+    font-size: 14px;
+}
+.profile .row {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-bottom: 2rem; */
+    padding: 1.5rem 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.row .item:hover {
+    background-color: var(--bs-gray-200);
+    transition-duration: .15s;
+
+}
+.row .item .icon {
+    background-color: #fafafc;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.row .item .text {
+    font-size: 20px;
+    font-weight: 500;
+}
+.profile .bg-dark {
+    max-width: 460px;
+    height: 1px;
+    margin-top: 3rem;
+}

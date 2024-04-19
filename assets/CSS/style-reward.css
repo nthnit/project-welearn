@@ -1,0 +1,279 @@
+.back-btn {
+    background-color: #FFF;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.back-btn .arrow-back {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.back-btn .arrow-back:hover{
+    background-color: #f5f5f5;
+}
+.back-btn .arrow-back:hover .text {
+    color: #0d6efd;
+}
+.back-btn .text {
+    font-size: 1.25rem;
+}
+.back-btn .text:hover {
+    color: #0d6efd;
+}
+
+.nav-bar .about {
+    background-color: #FFF;
+    color: #fff;
+    color: #8f90a6;
+
+}
+.nav-bar .about svg path {
+    fill: #8f90a6;
+}
+.top-reward {
+    display: flex;
+    justify-content: space-between;
+}
+.point-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #f2f5fa;
+}
+.point-history:hover {
+    background-color: #dee2e6;
+}
+.accumulation .level {
+    background-image: linear-gradient(to right, rgb(75, 139, 131) 37%, rgb(64, 118, 111));
+    padding-bottom: 2rem;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 20px rgba(0,0,0,.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    position: relative;
+}
+.accumulation .level .need-up {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.accumulation .level .level-now {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    padding: 0 1.5rem;
+}
+.accumulation .level .race {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+.race .progress {
+    height: 8px;
+    background-color: rgba(242, 249, 255, .4);
+    border-radius: 5px;
+}
+.race .progress .progress-bar{
+    width: 76.6467%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.race .icon {
+    margin-left: .75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+.race .icon img {
+    width: 1rem;
+    height: 1rem;
+}
+.how-to-get {
+    font-size: 10px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.how-to-get a {
+    color: #FFF;
+    text-decoration: none;
+}
+.assets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 179px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 2px rgba(40,41,61,.04), 0 4px 8px rgba(96,97,112,.16);
+    padding: 1rem;
+    background-color: #fffdcc;
+    border-radius: 20px;
+}
+.assets .balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.assets .balance .text {
+    text-align: center;
+    color: #8f90a6;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-top: .25rem;
+}
+.assets .balance .mount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .25rem;
+    
+}
+.assets .balance .mount span {
+    color: #0071ce;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: .25rem;
+}
+.assets .bolkhead {
+    width: 32px;
+    border-bottom: 1px solid #8f90a6;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.assets .recieved {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+.assets .recieved .text {
+    text-align: center;
+    color: #8f90a6;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-top: .25rem;
+}
+.assets .recieved .mount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .25rem;
+    
+}
+.assets .recieved .mount span {
+    color: #fa9847;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: .25rem;
+}
+
+.reward .title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.reward .rw-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 2px rgba(40,41,61,.04), 0 4px 8px rgba(96,97,112,.16);
+    border-radius: .75rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0;
+    width: 20%;
+}
+.reward .rw-item .rw-image {
+    border: 1px solid #f2f5fa;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.reward .rw-item .rw-image img {
+    width: 80px;
+    height: auto;
+}
+.reward .rw-item .lv-tag {
+    background-color: rgb(228, 186, 47);
+    color: #FFF;
+    padding: .125rem .5rem;
+    border-radius: 5rem;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+.reward .rw-item .item-name {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+.reward .rw-item .item-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #f2f5fa;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.reward .rw-item .item-price .price {
+    color: #3aa757;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: .25rem;
+}
+.reward .rw-item .lv-tag.lv-2{
+    background-color: rgb(255, 162, 33);
+}
+.reward .rw-item .lv-tag.lv-3{
+    background-color: rgb(192, 25, 49);
+}
+.reward .rw-item .lv-tag.lv-4{
+    background-color: rgb(75, 139, 131);
+}
+.reward .rw-item .lv-tag.lv-6 {
+    background-color: rgb(139, 37, 185);
+}

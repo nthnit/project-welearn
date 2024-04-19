@@ -1,0 +1,80 @@
+.back-btn {
+    background-color: #FFF;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.back-btn .arrow-back {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.back-btn .arrow-back:hover{
+    background-color: #f5f5f5;
+}
+.back-btn .arrow-back:hover .text {
+    color: #0d6efd;
+}
+.back-btn .text {
+    font-size: 1.25rem;
+}
+.back-btn .text:hover {
+    color: #0d6efd;
+}
+.choose-lang {
+    padding: 2.5rem 5rem;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    border: 1px solid #eee;
+    border-radius: 1rem;
+}
+.choose-lang .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.choose-lang .langs {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    border: 1px solid #eee;
+    border-radius: 1rem;
+}
+.choose-lang .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.choose-lang .eng {
+    border-bottom: 1px solid #eee;
+}
+.choose-lang .item label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-lang .item input {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.choose-lang .item .text {
+    margin-left: 10px;
+}
+.choose-lang .update-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+.choose-lang button {
+    padding: 1.8rem 4rem;
+    border-radius: 1.25rem;
+    width: 16rem;
+    font-size: 16px;
+}

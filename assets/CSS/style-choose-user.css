@@ -1,0 +1,103 @@
+.choose-user {
+    background-image: url(../Image/chooose-user/bg-account.0d1c3eeb60f9c857ece7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+
+.choose-user .title h1{
+    padding: 40px;
+    color: #FFF;
+    font-size: 3.5rem;
+}
+
+.choose-user .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-top: 200px;
+}
+.choose-user .user .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;;
+    z-index: 1;
+    border: 3px solid #FFF;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-user .user .avatar svg {
+    width: 65%;
+    height: 65%;
+}
+.choose-user .user .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.choose-user .user .name {
+    color: var(--color-text-2);
+}
+
+
+.choose-user .user:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.choose-user .select-user {
+    display: flex;
+    justify-content: space-evenly;
+}
+.choose-user .logout-btn {
+    margin-top: 180px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.choose-user .logout-btn .logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-user .logout-btn .btn {
+    width: 11rem;
+    height: 5rem;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* text-align: center; */
+    border-radius: 25px;
+    background-color: #FFF;
+    color: gray;
+    font-size: 20px;
+}
+.choose-user .logout-btn .btn svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    /* padding-right: 20px; */
+}
+.choose-user .logout-btn .btn:hover {
+    background-color: #e7e9ec;
+    border-color: #FFF;
+}
+.choose-user .logout-btn .btn:active {
+    background-color: #FFF;
+    
+}

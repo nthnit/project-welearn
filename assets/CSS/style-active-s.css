@@ -1,0 +1,213 @@
+.dropdown-toggle::after {
+    display: none;
+}
+.class-list .btn {
+    color: #8f90a6;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ebebf0;
+    border-radius: .75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    outline: var(--bs-primary);
+}   
+.class-list .btn.show svg{
+    transform: rotate(270deg);
+}
+.log-out-btn {
+    margin-top: 0;
+} 
+.nav-bar {
+    margin-bottom: .5rem;
+}
+.class-list .btn svg {
+    transform: rotate(90deg);
+}
+.dropdown-menu {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    padding: .5rem 0;
+    border: 1px solid #ebebf0;
+    width: 100%;
+}
+.dropdown-menu .dropdown-item {
+    color: #8f90a6;
+}
+.dropdown-menu  li:first-child a {
+    color: var(--bs-primary);
+}
+.top-welcome .motivation {
+    color: #8f90a6;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+.upcomingSche {
+    margin-top: 1rem;
+}
+.upcomingSche .title{
+    justify-content: flex-start;
+    align-items: center;
+}
+.upcomingSche .title .icon {
+    margin-right: .5rem;
+}
+.upcomingSche .title .text {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.att-wb-apos{
+    display: flex;
+    justify-content: space-around;
+}
+.att-wb-apos .item{
+    padding: 1.75rem 1.5rem;
+    text-align: left;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    color: white;
+    background-color: #2576b9;
+    width: 31%;
+}
+.att-wb-apos .item .content {
+    margin-left: .5rem;
+}
+.att-wb-apos .item .content .percent {
+    font-weight: 600;
+}
+.att-wb-apos .item.att svg path {
+    fill: #2576b9;
+}
+.att-wb-apos .item.wb {
+    background-color: #eb9cc4;
+}
+.att-wb-apos .item.wb svg path {
+    fill: #eb9cc4;
+}
+.att-wb-apos .item.apo {
+    background-color: #ffd95c;
+}
+.att-wb-apos .item.apo .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+.att-wb-apos .item.apo .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.assignments {
+    padding-top: 3rem;
+}
+.assignments .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.assignments .title .icon svg path {
+    fill: #BCDAF2;
+}
+.assignments .title .text {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: .5rem;
+}
+.assignments .assignments-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.assignments .assignments-list .noti-assignments {
+    color: #8f90a6;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.e-learning, .audio {
+    padding-top: 2rem;
+}
+.e-learning .title, .audio .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.e-learning .title .icon svg path {
+    fill: #BCDAF2;
+}
+.e-learning .title .text, .audio .title .text {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: .5rem;
+}
+.e-learning-list  {
+    padding-top: 1rem;
+}
+.e-learning-list .course-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    width: 20%;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    border-radius: 1rem;
+}
+.course-item .class-name {
+    font-weight: 600;
+    padding-bottom: .75rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #c7c9d9;
+    width: 100%;
+    text-align: center;
+    color: #2576b9;
+}
+.course-item .link-coure {
+    margin-top: 1rem;
+    background-color: #2576b9;
+    border-radius: .5rem;
+
+}
+.course-item .link-coure a {
+    color: #FFF;
+    font-size: .825rem;
+    text-decoration: none;
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+}
+.audio .book-list  {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.audio .book-list .book {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 1px rgba(40,41,61,.04), 0 2px 4px rgba(96,97,112,.16);
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.audio .book-list .book .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

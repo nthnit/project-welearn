@@ -1,0 +1,156 @@
+body {
+    background: #2b85c6 ;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto !important;
+}
+.bg {
+    background: none ;
+    padding: none !important;
+}
+.bg.col-6{
+    padding: 0;
+}
+.login {
+    position: relative;
+    
+}
+.login .logo {
+    /* width: 300px; */
+    min-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.login-form {
+    background-color: var( --color-text-2);
+    padding: 30px;
+    width: fit-content;
+    position: relative;
+    top: 30%;
+    left: 15%;
+    height: auto;
+    border-radius: 40px;
+}
+.flex {
+    justify-content: space-between;
+}
+.desc {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.title {
+    font-size: 32px;
+}
+.input-group-text {
+    background-color: #FFF;
+    border: 0;
+}
+.form-control {
+    
+    padding: 40px ;
+    border-radius: 25px;
+    position: relative;
+    padding-left: 72px;
+}
+.form-icon {
+    height: 100%;
+    left: 2.5rem;
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    color: gray;
+    top: 3.5rem;
+}
+.login-btn {
+    border: 0;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 4.5rem;
+    width: 13rem;
+    color: #FFF;
+    background-color: #5da9e8;
+    transition-duration: .15s;
+    font-size: 20px;
+}
+.login-btn:hover {
+    background-color: #2b85c6;
+}
+.login-btn:disabled{
+    --tw-text-opacity: 1;
+    background-color: #e5e7eb;
+    color: #c7c9d9;
+}
+.form-group {
+    position: relative;
+    width: 140px;
+}
+.eye {
+    left: 29rem;
+    cursor: pointer;
+}
+.eye:active{
+    transform: scale(1.1);
+    color: #2b85c6;
+}
+.hide {
+    display: none;
+}
+
+
+
+/* for email */
+.wrong-fill-em {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+.wrong-fill-em svg{
+    width: 19px;
+    height: auto;
+    margin-right: 10px;
+    color: red;
+    
+}
+.form-false-em .form-label-em{
+    color: red;
+}
+.form-false-em #user_email {
+    border:1px solid red;
+    margin-bottom: 5px;
+}
+.form-false-em .wrong-fill-em {
+    display: flex;
+}
+.form-false-pw .form-label-pw{
+    color: red;
+}
+
+/* for password */
+.wrong-fill-pw {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+.wrong-fill-pw svg{
+    width: 19px;
+    height: auto;
+    margin-right: 10px;
+    color: red;
+    
+}
+.form-false-pw #user_pw {
+    border:1px solid red;
+    margin-bottom: 5px;
+}
+.form-false-pw .wrong-fill-pw {
+    display: flex;
+}
