@@ -1,0 +1,16 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 1024 1024" aria-hidden="true">
+        <circle fill="#0084FF" style="" cx="512" cy="512" r="512"></circle>
+        <g id="spinner" fill="#FFFFFF">
+            <circle cx="512" cy="239" r="47" fill="#FFFFFF"></circle>
+            <circle cx="375" cy="275" r="47" fill-opacity="0.9" fill="#FFFFFF"></circle>
+            <circle cx="275" cy="375" r="47" fill-opacity="0.8" fill="#FFFFFF"></circle>
+            <circle cx="239" cy="512" r="47" fill-opacity="0.7" fill="#FFFFFF"></circle>
+            <circle cx="275" cy="649" r="47" fill-opacity="0.6" fill="#FFFFFF"></circle>
+            <circle cx="375" cy="749" r="47" fill-opacity="0.5" fill="#FFFFFF"></circle>
+            <circle cx="512" cy="785" r="47" fill-opacity="0.4" fill="#FFFFFF"></circle>
+            <circle cx="649" cy="749" r="47" fill-opacity="0.3" fill="#FFFFFF"></circle>
+            <circle cx="749" cy="649" r="47" fill-opacity="0.2" fill="#FFFFFF"></circle>
+            <circle cx="785" cy="512" r="47" fill-opacity="0.1" fill="#FFFFFF"></circle>
+        </g>
+        <path id="logo" fill="#FFFFFF" d="M512 171c192 0 341 141 341 331S704 833 512 833c-35 0-68-5-99-13-6-2-12-1-18 1l-68 30c-17 8-37-5-38-24l-2-61c0-7-4-14-9-19a324 324 0 01-107-245c0-190 149-331 341-331zM307 599c-10 15 9 32 24 21l107-82c8-5 18-5 25 0l80 60c24 18 58 12 74-14l100-159c10-15-9-32-24-21l-107 82c-8 5-18 5-25 0l-80-60a51 51 0 00-74 13L307 599z"></path>
+    </svg>

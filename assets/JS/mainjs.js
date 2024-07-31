@@ -86,16 +86,56 @@ elementsToMove.forEach((element) => {
 });
 
 
-const login = document.querySelector(".login-button");
+// Lấy tất cả các phần tử button có lớp là "login-button"
+const loginButtons = document.querySelectorAll(".login-button");
 
-login.addEventListener("click", () => {
-    // console.log("on click login");
-  window.location.href = `\login.html`  ;
+// Lặp qua từng nút đăng nhập và thêm sự kiện "click"
+loginButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        // Chuyển hướng đến trang đăng nhập khi nhấp vào nút
+        window.location.href = "login.html";
+    });
 });
 
-// const loginBanner = document.querySelector("#login-button-banner");
 
-// login.addEventListener("click", () => {
-//   window.location.href = `\login.html`  ;
-// });
 
+const subMenus = document.querySelectorAll(".sub-menu");
+const subMenuContents = document.querySelectorAll(".sub-menu-content");
+
+subMenus.forEach((subMenu, index) => {
+  let isSubMenuContentVisible = false;
+  subMenu.addEventListener("click", () => {
+    // Đóng tất cả các subMenu trước khi mở subMenu hiện tại
+    subMenus.forEach((menu, idx) => {
+      if (idx !== index) {
+        subMenuContents[idx].classList.add("d-none");
+        menu.classList.remove("active");
+      }
+    });
+
+    if (!isSubMenuContentVisible) {
+      subMenuContents[index].classList.remove("d-none");
+      subMenu.classList.add("active");
+      isSubMenuContentVisible = true;
+    } else {
+      subMenuContents[index].classList.add("d-none");
+      subMenu.classList.remove("active");
+      isSubMenuContentVisible = false;
+    }
+  });
+});
+
+
+// Hàm mở hoặc đóng menu di động
+function openMenuMobile() {
+  var mobileNav = document.querySelector('.mobile-nav'); // Chọn phần tử chứa menu di động
+
+  // Kiểm tra trạng thái hiện tại của menu
+  if (mobileNav.classList.contains('d-none')) {
+      // Nếu menu đang ẩn, hiển thị menu
+      mobileNav.classList.remove('d-none');
+  } else {
+      // Nếu menu đang hiển thị, ẩn menu
+      mobileNav.classList.add('d-none');
+  }
+}

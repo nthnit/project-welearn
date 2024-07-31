@@ -23,6 +23,24 @@ $('.slider-nav').slick({
   // variableWidth: true,
   mobileFirst: false,
   swipeToSlide: false,
+  responsive: [
+    {
+    breakpoint: 1199.98,
+    settings: {
+    arrows: false,
+    centerMode: true,
+    centerPadding: '40px',
+    slidesToShow: 3
+    }
+    },
+    {
+    breakpoint: 480,
+    settings: {
+    arrows: false,
+    centerMode: true,
+    centerPadding: '40px',
+    slidesToShow: 1
+    }} ]
 });
 
 
@@ -46,6 +64,17 @@ $('.slider-teacher').slick({
   nextArrow: '.arrow-next-teacher',
   autoplay: true,
   autoplaySpeed: 3000,
+  responsive: [
+    {
+    breakpoint: 768.98,
+    settings: {
+    arrows: false,
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 1,
+    }
+    }, 
+  ],
 });
 
 // // End Teacher slider

@@ -20,7 +20,8 @@
 
     <link rel="stylesheet" href="assets/CSS/base.css">
     <link rel="stylesheet" href="assets/CSS/style-active-p.css">
-    <link rel="stylesheet" href="assets/CSS/style-reward.css">
+    <link rel="stylesheet" href="assets/CSS/style-profile.css">
+    <link rel="stylesheet" href="assets/CSS/style-profile-s.css">
 </head>
 
 <body>
@@ -38,6 +39,7 @@
         <nav class="side-bar sticky top-12">
             <div class="userInfo  transition">
                 <div class="avatar">
+                    <!-- <img src="assets/Image/active/nam.jpg" alt=""> -->
                 </div>
                 <div class="wrap-name-type">
                     <div class="name text-dark-300 truncate">
@@ -78,7 +80,7 @@
 
                     <span class="text">Thời khóa biểu</span>
                 </a>
-                <a href="active-progress.html" class="progress-nav item">
+                <a href="#" class="progress-nav item">
                     <span class="icon">
                         <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -173,293 +175,136 @@
         </div>
         <div class="container">
             <div class="content">
-                <div class="top-reward">
-                    <button class="back-btn" id="back-progress">
-                        <span class="arrow-back">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="14" viewBox="0 0 8 14"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.70711 0.292893C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976313 7.31658 -0.0976313 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976312 7.31658 -0.0976311 7.70711 0.292893Z"
-                                    fill="#0071CE"></path>
-                            </svg>
-                        </span>
-                        <span class="text ">
-                            Nguyễn Thảo Vy (Candy)'s Rewards
-                        </span>
-                    </button>
-                    <a href="#" class="point-history">
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="text-primary-500" width="16" height="18"
-                            viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3.33392 1.30025C3.5195 0.797528 3.2566 0.24166 2.74673 0.0586841C2.23686 -0.124292 1.67308 0.134914 1.4875 0.637636L0.0618908 4.49954C-0.123688 5.00226 0.139205 5.55813 0.649078 5.7411L4.56592 7.14672C5.07579 7.3297 5.63956 7.07049 5.82514 6.56777C6.01072 6.06505 5.74783 5.50918 5.23796 5.3262L3.54994 4.72043L4.96194 4.07124C8.12085 2.61887 11.9754 4.00214 13.4484 7.11674C14.9214 10.2314 13.5185 14.0318 10.3596 15.4842C7.20068 16.9366 3.34614 15.5533 1.87311 12.4387C1.6438 11.9538 1.05926 11.7441 0.567496 11.9702C0.0757373 12.1962 -0.137019 12.7726 0.0922924 13.2575C2.02394 17.3418 7.04757 19.1446 11.19 17.24C15.3324 15.3355 17.1609 10.3823 15.2292 6.29798C13.2976 2.21365 8.27396 0.410846 4.13153 2.3154L2.71953 2.96459L3.33392 1.30025ZM8.14674 7.22351C8.14674 6.83691 7.78857 6.52351 7.34674 6.52351C6.90491 6.52351 6.54674 6.83691 6.54674 7.22351V10.7235C6.54674 10.9092 6.63102 11.0872 6.78105 11.2185L9.18105 13.3185C9.49347 13.5919 10 13.5919 10.3124 13.3185C10.6248 13.0451 10.6248 12.6019 10.3124 12.3285L8.14674 10.4336V7.22351Z"
-                                fill="#0071CE"></path>
-                        </svg>
-                    </a>
+                <div class="top-profile d-flex">
+                    <div class="welcome-name text-primary fs-3 ">
+                        Trang cá nhân
+                    </div>
                 </div>
-                <div class="accumulation">
-                    <div class="row">
-                        <div class="col-9">
-                            <div class="level">
-                                <div class="need-up">
-                                    <span>Con cần thêm 117 điểm thưởng Apos để lên cấp độ mới.</span>
+                <div class="profile">
+                    <div class="info ">
+                        <div class="avatar">
+                            <div class="avatar-image">
+                                <!-- <img src="assets/Image/active/nam.jpg" alt=""> -->
+                            </div>
+                            <div class="tag px-2 py-1.5 mx-auto">
+                                <div class="inner-tag type text-primary d-inline-block bg-primary bg-opacity-10  px-2 py-1.5 text-xs font-medium rounded
+                                        border-2 border-white ">
+                                    Parent
                                 </div>
-                                <div class="level-now">
-                                    <span>Level 4</span>
-                                </div>
-                                <div class="race">
-                                    <div class="progress" style="width: 100%">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="how-to-get">
-                                    <a href="#">
-                                        Cách tính điểm thuỏng Apos
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071Z"
-                                                fill="#FFFFFF"></path>
-                                        </svg>
-                                    </a>
-                                </div>
+
+                            </div>
+                            <div class="white-bg">
+
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="assets">
-                                <div class="balance">
-                                    <div class="text">
-                                        Tổng điểm thưởng Apos hiện tại
-                                    </div>
-                                    <div class="mount">
-                                        <div class="icon">
-                                            <img src="assets/Image/active/apos-logo.png" alt="">
-                                        </div>
-                                        <span>384</span>
-                                    </div>
-                                </div>
-
-                                <div class="bolkhead">
-
-                                </div>
-
-                                <div class="recieved">
-                                    <div class="text">
-                                        Tổng điểm thưởng Apo đã nhận
-                                    </div>
-                                    <div class="mount">
-                                        <div class="icon">
-                                            <img src="assets/Image/active/apos-logo.png" alt="">
-                                        </div>
-                                        <span>384</span>
-                                    </div>
-                                </div>
+                        <div class="name">
+                            Nguyễn Thạc Hoàng Nam
+                        </div>
+                        <div class="mail">
+                            hoangnam2584bn@gmail.com
+                        </div>
+                    </div>
+                    <div class="first-row row">
+                        <div class="col-5 item">
+                            <div class="icon">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="28"
+                                    viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="text-primary-300">
+                                    <path
+                                        d="M12 3.33341C9.05448 3.33341 6.66667 5.72123 6.66667 8.66675C6.66667 11.6123 9.05448 14.0001 12 14.0001C14.9455 14.0001 17.3333 11.6123 17.3333 8.66675C17.3333 5.72123 14.9455 3.33341 12 3.33341ZM4 8.66675C4 4.24847 7.58172 0.666748 12 0.666748C16.4183 0.666748 20 4.24847 20 8.66675C20 13.085 16.4183 16.6667 12 16.6667C7.58172 16.6667 4 13.085 4 8.66675ZM6.66667 22.0001C4.45753 22.0001 2.66667 23.7909 2.66667 26.0001C2.66667 26.7365 2.06971 27.3334 1.33333 27.3334C0.596954 27.3334 0 26.7365 0 26.0001C0 22.3182 2.98477 19.3334 6.66667 19.3334H17.3333C21.0152 19.3334 24 22.3182 24 26.0001C24 26.7365 23.403 27.3334 22.6667 27.3334C21.9303 27.3334 21.3333 26.7365 21.3333 26.0001C21.3333 23.7909 19.5425 22.0001 17.3333 22.0001H6.66667Z"
+                                        fill="#2E94E8"></path>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                Thông tin
+                            </div>
+                        </div>
+                        <div class="col-5 item" id="chageAcc">
+                            <div class="icon">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="" width="28" height="28"
+                                    viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.3332 3.33317C8.38765 3.33317 5.99984 5.72099 5.99984 8.6665C5.99984 11.612 8.38765 13.9998 11.3332 13.9998C14.2787 13.9998 16.6665 11.612 16.6665 8.6665C16.6665 5.72099 14.2787 3.33317 11.3332 3.33317ZM3.33317 8.6665C3.33317 4.24823 6.91489 0.666504 11.3332 0.666504C15.7514 0.666504 19.3332 4.24823 19.3332 8.6665C19.3332 13.0848 15.7514 16.6665 11.3332 16.6665C6.91489 16.6665 3.33317 13.0848 3.33317 8.6665ZM20.4377 3.00965C20.9584 2.48895 21.8027 2.48895 22.3234 3.00965C25.4476 6.13384 25.4476 11.1992 22.3234 14.3234C21.8027 14.8441 20.9584 14.8441 20.4377 14.3234C19.917 13.8027 19.917 12.9584 20.4377 12.4377C22.5205 10.3549 22.5205 6.97806 20.4377 4.89527C19.917 4.37457 19.917 3.53035 20.4377 3.00965ZM21.373 20.3431C21.5516 19.6287 22.2755 19.1944 22.9899 19.373C24.7604 19.8156 25.8812 20.9477 26.5257 22.2369C27.1494 23.4843 27.3332 24.876 27.3332 25.9998C27.3332 26.7362 26.7362 27.3332 25.9998 27.3332C25.2635 27.3332 24.6665 26.7362 24.6665 25.9998C24.6665 25.1237 24.5169 24.182 24.1406 23.4295C23.7852 22.7186 23.2392 22.1841 22.3431 21.96C21.6287 21.7814 21.1944 21.0575 21.373 20.3431ZM6.6665 21.9998C4.98723 21.9998 3.33317 23.6179 3.33317 25.9998C3.33317 26.7362 2.73622 27.3332 1.99984 27.3332C1.26346 27.3332 0.666504 26.7362 0.666504 25.9998C0.666504 22.4907 3.19113 19.3332 6.6665 19.3332H15.9998C19.4752 19.3332 21.9998 22.4907 21.9998 25.9998C21.9998 26.7362 21.4029 27.3332 20.6665 27.3332C19.9301 27.3332 19.3332 26.7362 19.3332 25.9998C19.3332 23.6179 17.6791 21.9998 15.9998 21.9998H6.6665Z"
+                                        fill="#2E94E8"></path>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                Đổi tài khoản
                             </div>
                         </div>
                     </div>
-                    <div class="reward">
-                        <div class="row">
-                            <div class="title">
-                                Phần thưởng
+                    <div class="second-row row">
+                        <div class="col-5 item" id="changeLang">
+                            <div class="icon">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"
+                                    viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.7334 17.3333H10.0361C10.2642 21.5558 11.6101 25.6418 13.9361 29.1733C11.0226 28.7157 8.34299 27.3055 6.31609 25.1633C4.28918 23.0211 3.02929 20.2676 2.7334 17.3333ZM2.7334 14.6667C3.02929 11.7324 4.28918 8.9789 6.31609 6.83668C8.34299 4.69446 11.0226 3.28429 13.9361 2.82666C11.6101 6.35814 10.2642 10.4442 10.0361 14.6667H2.7334ZM29.2667 14.6667H21.9641C21.7359 10.4442 20.39 6.35814 18.0641 2.82666C20.9775 3.28429 23.6571 4.69446 25.684 6.83668C27.711 8.9789 28.9708 11.7324 29.2667 14.6667ZM29.2667 17.3333C28.9708 20.2676 27.711 23.0211 25.684 25.1633C23.6571 27.3055 20.9775 28.7157 18.0641 29.1733C20.39 25.6418 21.7359 21.5558 21.9641 17.3333H29.2681H29.2667ZM12.7067 17.3333H19.2934C19.0739 20.9326 17.9405 24.4166 16.0001 27.456C14.0597 24.4166 12.9262 20.9326 12.7067 17.3333ZM12.7067 14.6667C12.9262 11.0673 14.0597 7.58341 16.0001 4.54399C17.9405 7.58341 19.0739 11.0673 19.2934 14.6667H12.7067Z"
+                                        fill="#2E94E8"></path>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                Ngôn ngữ
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-3 rw-item pencil">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/pancil.jpg" alt="">
-                                </div>
-                                <div class="lv-tag">
-                                    Level 1
-                                </div>
-                                <div class="item-name">
-                                    Pencil - Bút chì
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
 
-                                    </div>
-                                    <div class="price">
-                                        <span>60</span>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="bg-dark mx-auto bg-opacity-10">
+                    </div>
+                    <div class="third-row row">
+                        <div class="col-5 item">
+                            <div class="icon">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10H18C19.1046 10 20 10.8954 20 12V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V12C4 10.8954 4.89543 10 6 10H7V8ZM12 5C10.3431 5 9 6.34315 9 8V10H15V8C15 6.34315 13.6569 5 12 5Z"
+                                        fill="#6B7280"></path>
+                                </svg>
                             </div>
-                            <div class="col-3 rw-item pen">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/pen.jpg" alt="">
-                                </div>
-                                <div class="lv-tag">
-                                    Level 1
-                                </div>
-                                <div class="item-name">
-                                    Pen - Bút bi
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>60</span>
-                                    </div>
-                                </div>
+                            <div class="text">
+                                Đổi mật khẩu
                             </div>
-                            <div class="col-3 rw-item sticker">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/sticker.png" alt="">
-                                </div>
-                                <div class="lv-tag">
-                                    Level 1
-                                </div>
-                                <div class="item-name">
-                                    Sticker
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>60</span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-5 item">
+                            <div class="icon">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10H18C19.1046 10 20 10.8954 20 12V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V12C4 10.8954 4.89543 10 6 10H7V8ZM12 5C10.3431 5 9 6.34315 9 8V10H15V8C15 6.34315 13.6569 5 12 5Z"
+                                        fill="#6B7280"></path>
+                                </svg>
                             </div>
-                            <div class="col-3 rw-item bag">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/bag.png" alt="">
-                                </div>
-                                <div class="lv-tag lv-2">
-                                    Level 2
-                                </div>
-                                <div class="item-name">
-                                    Wonderbot bag - Túi rút wonderbot
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>200</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 rw-item cup">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/cup.png" alt="">
-                                </div>
-                                <div class="lv-tag lv-3">
-                                    Level 3
-                                </div>
-                                <div class="item-name">
-                                    Apo cup - Ly nước Apo
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>320</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 rw-item t-shirt">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/t-shirt.png" alt="">
-                                </div>
-                                <div class="lv-tag lv-4">
-                                    Level 4
-                                </div>
-                                <div class="item-name">
-                                    Wonderbot Shirt - Áo Wonderbot
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>480</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 rw-item voucher">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/voucher.jpg" alt="">
-                                </div>
-                                <div class="lv-tag lv-4">
-                                    Level 4
-                                </div>
-                                <div class="item-name">
-                                    Voucher - Phiếu học phí 100k
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>480</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 rw-item sooter">
-                                <div class="rw-image">
-                                    <img src="assets/Image/active/Reward-items/scooter.png" alt="">
-                                </div>
-                                <div class="lv-tag lv-6">
-                                    Level 6
-                                </div>
-                                <div class="item-name">
-                                    Scooter
-                                </div>
-                                <div class="item-price">
-                                    <div class="icon">
-                                        <img src="assets/Image/active/apos-logo.png" alt="">
-
-                                    </div>
-                                    <div class="price">
-                                        <span>800</span>
-                                    </div>
-                                </div>
+                            <div class="text">
+                                Đổi PIN
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
             </div>
-
-
-
-
-
-
-
         </div>
-    </div>
 
 
 
 
 
 
-    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/JQuery/jquery.min.js"></script>
-    <script src="assets/JQuery/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="assets/JS/slick.js"></script>
-    <!-- <script src="assets/JS/slider-active.js"></script> -->
-    <script src="assets/JS/active.js"></script>
-    <script>
-        const backProgress = document.querySelector('#back-progress');
-        backProgress.addEventListener('click', function () {
-            window.location.href = "active-progress.html";
-        });
-
-    </script>
-    <!-- <script src="assets/JS/mainjs.js"></script> -->
+        <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/JQuery/jquery.min.js"></script>
+        <script src="assets/JQuery/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="assets/JS/slick.js"></script>
+        <!-- <script src="assets/JS/slider-active.js"></script> -->
+        <script src="assets/JS/active.js"></script>
+        <script>
+            
+        </script>
+        <!-- <script src="assets/JS/mainjs.js"></script> -->
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welearn</title>
+    <title>Trung tâm Anh ngữ WeLearn English </title>
     <link rel="shortcut icon" href="assets/Image/logo/1.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/CSS/animations.min.css"> -->
@@ -32,9 +32,15 @@
                 <ul class="col-12">
 
                     <li>
-                        <a class="navbar-brand" href="#">
+
+                        <a class="navbar-brand logo-desktop" href="#">
                             <div class="inner-logo">
-                                <img src="assets/Image/logo/h-logo-cr-cropped.svg" alt="h-logo" class="h-logo">
+                                <img src="assets/Image/logo/h-logo-cr-cropped.svg" alt="logo" class="v-logo">
+                            </div>
+                        </a>
+                        <a class="navbar-brand logo-mobile" href="#">
+                            <div class="inner-logo">
+                                <img src="assets/Image/logo/logo1hang.svg" alt="logo" class="v-logo">
                             </div>
                         </a>
                     </li>
@@ -86,21 +92,116 @@
                         </a>
                     </li>
                     <li><button class="btn login-button">Login WeLearn</button></li>
+                    <li> <a href="" type="button" onclick="openMenuMobile()" class="hamburger-btn ">
+                            <img src="assets/Image/icon/menu-mobile.svg" alt="">
+                        </a></li>
+
                 </ul>
             </div>
         </div>
     </header>
+    <div class="mobile-nav d-none">
+        <a href="javascript:void(0);" type="button" onclick="openMenuMobile()" class="hamburger-btn">
+            <img src="assets/Image/icon/close-button.svg" alt="">
+        </a>
+        <ul>
+            <li>
+                <div class="sub-menu">
+                    <div class="dropbtn">
+                        <a href="#" class="title">
+                            Về chúng tôi
+                        </a>
+                        <span class="icon-triangle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="sub-menu-content d-none">
+                        <li> <a href="#">Giới thiệu</a></li>
+                        <li> <a href="#">Tầm nhìn & sứ mệnh</a></li>
+                        <li> <a href="#">Vì sao chọn Apollo?</a></li>
+                        <li> <a href="#">Thành tựu</a></li>
+                        <li> <a href="#">Đội ngũ giáo viên</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="sub-menu">
+                    <div class="dropbtn">
+                        <a href="#" class="title">
+                            Chương trình học
+                        </a>
+                        <span class="icon-triangle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <ul class="sub-menu-content d-none">
+                        <li><a href="#">Tiếng Anh theo lứa tuổi</a></li>
+                        <li> <a href="#">Phương pháp học tập</a></li>
+                        <li> <a href="#">Chương trình Nâng cao</a></li>
+                        <li> <a href="#" class="text-danger">Chương trình Đặc biệt</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" class="title">Hệ thống trung tâm</a></li>
+            <li><a href="#" class="title">Tin tức & Sự kiện</a></li>
+            <li>
+                <div class="sub-menu">
+                    <div class="dropbtn">
+                        <a href="#" class="title">
+                            Góc phụ huynh
+                        </a>
+                        <span class="icon-triangle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                            </svg>
+                        </span>
+                    </div>
+
+
+                    <ul class="sub-menu-content d-none">
+                        <li><a href="#">Cùng con đến trường</a></li>
+                        <li> <a href="#">Trắc nghiệm hay</a></li>
+                        <li> <a href="#">Tài liệu hay</a></li>
+                        <li> <a href="#">Góc chia sẻ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+
+                <a href="#" class="lang-trans-btn title">
+                    <img src="assets/Image/flag-gb.svg" alt="E-Flag">
+                    English
+                </a>
+            </li>
+            <li><button class="btn login-button">Login WeLearn Active</button></li>
+        </ul>
+
+    </div>
     <!-- End Header -->
     <section class="banner-section">
         <div class="container">
             <header class="header">
                 <div class="container">
                     <div class="row">
-                        <ul class="col-12">
+                        <ul class="col-12 ">
 
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand logo-desktop" href="#">
                                 <div class="inner-logo">
                                     <img src="assets/Image/logo/v-logo-w-cr-cropped.svg" alt="logo" class="v-logo">
+                                </div>
+                            </a>
+                            <a class="navbar-brand logo-mobile" href="#">
+                                <div class="inner-logo">
+                                    <img src="assets/Image/logo//logo1hang.svg" alt="logo" class="v-logo">
                                 </div>
                             </a>
                             <li>
@@ -144,7 +245,11 @@
                                     English
                                 </a>
                             </li>
-                            <li><button class="btn login-button " id="login-button-banner">Login WeLearn</button></li>
+                            <li><button class="btn login-button " id="login-button">Login WeLearn</button></li>
+                            <a href="" type="button" onclick="openMenuMobile()"
+                                class="hamburger-btn ">
+                                <img src="assets/Image/icon/menu-mobile.svg" alt="">
+                            </a>
                         </ul>
                     </div>
                 </div>
@@ -510,12 +615,12 @@
 
     <section class="journey">
         <div class="container">
-            <div class="title-main">
+            <div class="title-main animated bounceIn delay-250 lazyload">
                 HÀNH TRÌNH 30 NĂM NUÔI DƯỠNG SỰ TỰ TIN CỦA <br> HÀNG TRIỆU TRẺ EM VIỆT!
-            </div>
-            <ul class="list-tab">
-                <li class=" tab-item active" data-slide="1">
-                    
+            </div> 
+            <ul class="list-tab ">
+                <li class=" tab-item active " data-slide="1">
+
                     Tổng Quan
                 </li>
                 <li class="tab-item" data-slide="2">1995</li>
@@ -534,9 +639,12 @@
                         <img src="assets/Image/journey/backgroud-tongquan-jouney.svg" alt="bg-tong-quan" class="bg-img">
                         <img src="assets/Image/journey/tongquan-jouney-7NzMQO4i1i77lHxh-IP0qGrHJVAX7yPF4-e4fm69quaJdcLZj9.webp"
                             alt="" class="inner-img img-about">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -548,7 +656,8 @@
                                         better</strong>” - nơi các học viên được khơi sáng tình yêu học tập để tự tin sử
                                     dụng tiếng Anh như ngôn ngữ thứ hai, làm chủ kỹ năng tương lai và khai phóng tiềm
                                     năng của bản thân trước thế giới không ngừng biến đổi.</p>
-                                <p>Trong suốt gần 30 năm mang tiếng Anh gần hơn với cuộc sống, WeLearn tự hào và cảm thấy
+                                <p>Trong suốt gần 30 năm mang tiếng Anh gần hơn với cuộc sống, WeLearn tự hào và cảm
+                                    thấy
                                     biết ơn khi được chứng kiến các thế hệ học viên của mình trưởng thành, và thành
                                     công. Chắc chắn chúng tôi sẽ nỗ lực hơn nữa để mang đến những trải nghiệm học tập
                                     tuyệt vời</p>
@@ -559,10 +668,13 @@
                 <div class="tab tab2 slick-slide" id="tab-2">
                     <div class="image">
                         <img src="assets/Image/journey/1995.svg" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
-                     </div>
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
+                    </div>
                     <div class="content">
                         <div class="inner-content">
                             <div class="title" data-char="Thành lập">
@@ -579,9 +691,12 @@
                 <div class="tab tab3 slick-slide" id="tab-3">
                     <div class="image">
                         <img src="assets/Image/journey/1996.svg" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content" data-char="Áp dụng chuẩn Cambridge">
@@ -599,10 +714,14 @@
                 </div>
                 <div class="tab tab4 slick-slide" id="tab-4">
                     <div class="image">
-                        <img src="assets/Image/journey/Web_hinh teacher-01-ebvXNwfQi5DzCS5Q (2)-nrffRu45aM1HIjv9.webp" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/Web_hinh teacher-01-ebvXNwfQi5DzCS5Q (2)-nrffRu45aM1HIjv9.webp"
+                            alt="" class="inner-img">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -618,10 +737,14 @@
                 </div>
                 <div class="tab tab5 slick-slide" id="tab-5">
                     <div class="image">
-                        <img src="assets/Image/journey/website-apollo-sach-SDbw8kEUeZNv0fic-4va0TaOkOuuXpl8T.png" alt="giao trinh" class="inner-img lazyload">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/website-apollo-sach-SDbw8kEUeZNv0fic-4va0TaOkOuuXpl8T.png"
+                            alt="giao trinh" class="inner-img lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -645,9 +768,12 @@
                 <div class="tab tab6 slick-slide" id="tab-6">
                     <div class="image">
                         <img src="assets/Image/journey/2006-n3PVSQRLvu8AMNMU.webp" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -655,7 +781,8 @@
                                 Thành viên Hoàng gia
                             </div>
                             <div class="desc">
-                                Với những đóng góp của mình cho nền giáo dục Việt Nam, nhà sáng lập WeLearn English - ông
+                                Với những đóng góp của mình cho nền giáo dục Việt Nam, nhà sáng lập WeLearn English -
+                                ông
                                 Khalid Muhmood được Bộ Giáo dục và Đào tạo trao tặng huân chương “Vì sự nghiệp giáo dục"
                                 (2006). Đồng thời được nữ hoàng Anh phong tước 'Thành viên Hoàng Gia' (2008).
                             </div>
@@ -665,9 +792,12 @@
                 <div class="tab tab7 slick-slide" id="tab-7">
                     <div class="image">
                         <img src="assets/Image/journey/2002.svg" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -684,9 +814,12 @@
                 <div class="tab tab8 slick-slide" id="tab-8">
                     <div class="image">
                         <img src="assets/Image/journey/2007.svg" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -704,9 +837,12 @@
                 <div class="tab tab9 slick-slide" id="tab-9">
                     <div class="image">
                         <img src="assets/Image/journey/2021-ocqsEMJdplsfmm71.jpg" alt="" class="inner-img">
-                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb" class="light-bulb animated bounceIn delay-250 lazyload">
-                        <img src="assets/Image/journey/star-jouney.svg" alt="star" class="star animated fadeIn delay-750 lazyload">
-                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy" class="trophy animated bounceIn delay-500 lazyload">
+                        <img src="assets/Image/journey/jouney-lightbulb.svg" alt="light-bulb"
+                            class="light-bulb animated bounceIn delay-250 lazyload">
+                        <img src="assets/Image/journey/star-jouney.svg" alt="star"
+                            class="star animated fadeIn delay-750 lazyload">
+                        <img src="assets/Image/journey/trophy-jouney.svg" alt="trophy"
+                            class="trophy animated bounceIn delay-500 lazyload">
                     </div>
                     <div class="content">
                         <div class="inner-content">
@@ -720,9 +856,9 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            
+
             <div class="direct-btn">
                 <div class="prev arrow-prev-journey slick-arrow slick-prev btn-arrow">
                     <img src="assets/Image/icon/pre.svg" alt="prev-arrow" class="prev-btn">
@@ -740,9 +876,9 @@
     <section id="vision">
         <div class="bg-top">
             <div class="line lazyload animated ">
-                <img src="assets/Image/vision/i-line.svg" alt="">
+                <img src="assets/Image/vision/i-line.svg" alt="" class="">
             </div>
-            <div class="rocket">
+            <div class="rocket animated lazyload">
                 <img src="assets/Image/vision/i-rocket.svg" alt="">
             </div>
             <div class="star">
@@ -868,6 +1004,16 @@
                             </div>
                             <div class="image">
                                 <img src="assets/Image/vision/children-1.png" alt="">
+                                <img src="assets/Image/icon/i1.svg" alt=""
+                                    class="icon-1 icon animated fadeIn delay-1000 go lazyload">
+                                <img src="assets/Image/icon/i2.svg" alt=""
+                                    class="icon-2 icon animated fadeIn delay-1250 go lazyload">
+                                <img src="assets/Image/icon/i3.svg" alt=""
+                                    class="icon-3 icon animated fadeIn delay-1500 go lazyload">
+                                <img src="assets/Image/icon/i4.svg" alt=""
+                                    class="icon-4 icon animated fadeIn delay-1750 go lazyload">
+                                <img src="assets/Image/icon/i5.svg" alt=""
+                                    class="icon-5 icon animated fadeIn delay-2000 go lazyload">
                             </div>
                         </div>
                     </div>
@@ -878,6 +1024,16 @@
                             </div>
                             <div class="image">
                                 <img src="assets/Image/vision/children-2.png" alt="">
+                                <img src="assets/Image/icon/i1.svg" alt=""
+                                    class="icon-1 icon animated fadeIn delay-1000 go lazyload">
+                                <img src="assets/Image/icon/i2.svg" alt=""
+                                    class="icon-2 icon animated fadeIn delay-1250 go lazyload">
+                                <img src="assets/Image/icon/i3.svg" alt=""
+                                    class="icon-3 icon animated fadeIn delay-1500 go lazyload">
+                                <img src="assets/Image/icon/i4.svg" alt=""
+                                    class="icon-4 icon animated fadeIn delay-1750 go lazyload">
+                                <img src="assets/Image/icon/i5.svg" alt=""
+                                    class="icon-5 icon animated fadeIn delay-2000 go lazyload">
                             </div>
                         </div>
                     </div>
@@ -888,6 +1044,16 @@
                             </div>
                             <div class="image">
                                 <img src="assets/Image/vision/children-3.png" alt="">
+                                <img src="assets/Image/icon/i1.svg" alt=""
+                                    class="icon-1 icon animated fadeIn delay-1000 go lazyload">
+                                <img src="assets/Image/icon/i2.svg" alt=""
+                                    class="icon-2 icon animated fadeIn delay-1250 go lazyload">
+                                <img src="assets/Image/icon/i3.svg" alt=""
+                                    class="icon-3 icon animated fadeIn delay-1500 go lazyload">
+                                <img src="assets/Image/icon/i4.svg" alt=""
+                                    class="icon-4 icon animated fadeIn delay-1750 go lazyload">
+                                <img src="assets/Image/icon/i5.svg" alt=""
+                                    class="icon-5 icon animated fadeIn delay-2000 go lazyload">
                             </div>
                         </div>
                     </div>
@@ -899,6 +1065,16 @@
                             </div>
                             <div class="image">
                                 <img src="assets/Image/vision/children-4.png" alt="">
+                                <img src="assets/Image/icon/i1.svg" alt=""
+                                    class="icon-1 icon animated fadeIn delay-1000 go lazyload">
+                                <img src="assets/Image/icon/i2.svg" alt=""
+                                    class="icon-2 icon animated fadeIn delay-1250 go lazyload">
+                                <img src="assets/Image/icon/i3.svg" alt=""
+                                    class="icon-3 icon animated fadeIn delay-1500 go lazyload">
+                                <img src="assets/Image/icon/i4.svg" alt=""
+                                    class="icon-4 icon animated fadeIn delay-1750 go lazyload">
+                                <img src="assets/Image/icon/i5.svg" alt=""
+                                    class="icon-5 icon animated fadeIn delay-2000 go lazyload">
                             </div>
                         </div>
                     </div>
@@ -918,12 +1094,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="title-main">
+                    <div class="title-main animated lazyload fadeIn delay-250">
                         ĐỘI NGŨ GIÁO VIÊN GIÀU KINH NGHIỆM
                     </div>
                 </div>
             </div>
-            <div class="row wrap-teacher slick-slider ">
+            <div class="wrap-icon animated lazyload">
+                <div class="pen animated lazyload fadeIn">
+                    <img src="assets/Image/icon/teacher/pen.svg" alt="">
+                </div>
+                <div class="pencil animated lazyload fadeIn delay-1200">
+                    <img src="assets/Image/icon/teacher/pencil.svg" alt="">
+                </div>
+                <div class="glass animated lazyload fadeIn delay-1500">
+                    <img src="assets/Image/icon/teacher/glass.svg" alt="">
+                </div>
+                <div class="hat animated lazyload fadeIn delay-3500">
+                    <img src="assets/Image/icon/teacher/hat.svg" alt="">
+                </div>
+                <div class="book animated lazyload fadeIn delay-4000">
+                    <img src="assets/Image/icon/teacher/book.svg" alt="">
+                </div>
+                <div class="s-star1 animated lazyload fadeIn delay-2500">
+                    <img src="assets/Image/icon/teacher/s-star.svg" alt="">
+                </div>
+                <div class="s-star2 animated lazyload fadeIn delay-1750">
+                    <img src="assets/Image/icon/teacher/s-star.svg" alt="">
+                </div>
+                <div class="big-star1 animated lazyload fadeIn delay-2000">
+                    <img src="assets/Image/icon/teacher/big-star.svg" alt="">
+                </div>
+                <div class="big-star2 animated lazyload fadeIn delay-2250">
+                    <img src="assets/Image/icon/teacher/big-star.svg" alt="">
+                </div>
+                <div class="big-star3 big-star2 animated lazyload fadeIn delay-3250">
+                    <img src="assets/Image/icon/teacher/big-star.svg" alt="">
+                </div>
+                <div class="big-star4 animated lazyload fadeIn delay-2750">
+                    <img src="assets/Image/icon/teacher/big-star.svg" alt="">
+                </div>
+                <div class="big-star5 animated lazyload fadeIn delay-3750">
+                    <img src="assets/Image/icon/teacher/big-star.svg" alt="">
+                </div>
+                <div class="meteor animated lazyload fadeIn delay-3000">
+                    <img src="assets/Image/icon/teacher/small-meteor.svg" alt="">
+                </div>
+            </div>
+            <div class="row wrap-teacher slick-slider animated lazyload fadeIn delay-350">
                 <div class="slider slider-teacher">
                     <div class="item-teacher slick-slide slick-track">
                         <div class="inner-content">
@@ -935,7 +1152,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -954,7 +1171,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -973,7 +1190,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -992,7 +1209,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1011,7 +1228,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1030,7 +1247,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1049,7 +1266,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1068,7 +1285,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1087,7 +1304,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1106,7 +1323,7 @@
                                     Amiee Thomas
                                 </div>
                                 <div class="teacher-position">
-                                    Giáo viên (WeLearn Hào Nam)
+                                    Giáo viên (WeLearn Từ Sơn)
                                 </div>
                                 <div class="teacher-quote">
                                     <p>Những thầy cô giỏi nhất dạy bằng trái tim, chứ không từ sách vở.</p>
@@ -1135,17 +1352,38 @@
         <div class="wave">
             <img src="assets/Image/teacher/wave-infrastructure.svg" alt="">
         </div>
-        <div class="contaner">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-main">
-                        Cơ sở vật chất
-                    </div>
+        <div class="rocket-bg">
+            <img src="assets/Image/icon/instructure/star-line.svg" alt="" class="bg-line">
+            <img src="assets/Image/icon/instructure/space-rocket.svg" alt="" class="rocket animated lazyload">
+            <div class="overlay-bg animated lazyload"></div>
+        </div>
+        <div class="container  ">
 
+            <div class="icon-wrap animated fadeIn lazyload delay-1500">
+                <div class="trophy-container">
+                    <img src="assets/Image/icon/instructure/small-bluestar.svg" alt="" class="s-star">
+                    <img src="assets/Image/icon/instructure/big-bluestar.svg" alt="" class="b-star">
+                    <img src="assets/Image/icon/instructure/trophy.svg" alt="" class="trophy animated lazyload">
+                </div>
+                <div class="red-cup animated lazyload">
+                    <img src="assets/Image/icon/instructure/red-cup.svg" alt="">
+                </div>
+                <div class="s-star1">
+                    <img src="assets/Image/icon/instructure/small-star1.svg" alt="">
+                </div>
+                <div class="s-star2">
+                    <img src="assets/Image/icon/instructure/small-star1.svg" alt="">
                 </div>
             </div>
-            <div class="row wrap-instructure">
-                <div class="slider ins-slider-for">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-main animated lazyload fadeIn delay-250">
+                        Cơ sở vật chất
+                    </div>
+                </div>
+            </div>
+            <div class="row wrap-instructure  ">
+                <div class="slider ins-slider-for  animated lazyload fadeIn delay-1250">
                     <div class="ins-item slider-item">
                         <div class="ins-img">
                             <img src="assets/Image/instructure/ảnh 1-mxI5k1mWY3eZhJ0J.png" alt="">
@@ -1169,14 +1407,14 @@
                     </div>
                 </div>
 
-                <div class="arrow-prev-ins slick-arrow slick-prev btn-arrow">
+                <div class="arrow-prev-ins slick-arrow slick-prev btn-arrow animated lazyload bounceIn delay-1250">
                     <span><img src="assets/Image/icon/pre.svg" alt="pre-arrow"></span>
                 </div>
-                <div class="arrow-next-ins slick-arrow slick-next btn-arrow">
+                <div class="arrow-next-ins slick-arrow slick-next btn-arrow animated lazyload bounceIn delay-1250">
                     <span><img src="assets/Image/icon/next.svg" alt="next-arrow"></span>
                 </div>
 
-                <div class="slider ins-slider-nav">
+                <div class="slider ins-slider-nav animated lazyload fadeIn delay-1500">
 
                     <div class="ins-item-nav slick-slide slider-item">
                         <div class="ins-img ">
@@ -1206,11 +1444,32 @@
     <!-- End Cơ sở vật chất -->
     <!-- Thông điệp -->
     <section class="message">
+        <div class="bg-line">
+            <img src="assets/Image/icon/message/message-section-space.svg" alt="">
+        </div>
+
         <div class="container">
             <div class="content-mess">
-                <div class="slogan animated fadeIn lazyloading go"
+                <div class="slogan animated bounceIn lazyload"
                     data-char="HÃY CÙNG WELEARN CHO CON BƯỚC KHỞI ĐẦU TỐT NHẤT ĐỂ PHÁT TRIỂN VÀ TRƯỞNG THÀNH NGAY HÔM NAY!">
                     HÃY CÙNG WELEARN CHO CON BƯỚC KHỞI ĐẦU TỐT NHẤT ĐỂ PHÁT TRIỂN VÀ TRƯỞNG THÀNH NGAY HÔM NAY!
+                </div>
+
+            </div>
+            <div class="icon-wrap">
+                <div class="trophy-container animated bounceIn lazyload">
+                    <img src="assets/Image/icon/instructure/small-bluestar.svg" alt="" class="s-star">
+                    <img src="assets/Image/icon/instructure/big-bluestar.svg" alt="" class="b-star">
+                    <img src="assets/Image/icon/instructure/trophy.svg" alt="" class="trophy animated lazyload">
+                </div>
+                <div class="light-bulb animated bounceIn lazyload">
+                    <img src="assets/Image/icon/message/lightbulb.svg" alt="" class="animated lazyload">
+                </div>
+                <div class="balloon animated bounceIn lazyload">
+                    <img src="assets/Image/icon/message/i-balloon.svg" alt="" class="animated lazyload">
+                </div>
+                <div class="red-cup animated bounceIn lazyload">
+                    <img src="assets/Image/icon/message/red-cup.svg" alt="" class="animated lazyload">
                 </div>
             </div>
         </div>
@@ -1221,25 +1480,42 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="wrap-icon-ft">
+            <div class="ft-rocket-bg">
+                <div class="rocket animated lazyload">
+                    <img src="assets/Image/icon/footer/rocket.svg" alt="">
+                </div>
+                <div class="rocket-smoke ">
+                    <img src="assets/Image/icon/footer/rocket-smoke.svg" alt="" class="animated lazyload">
+                </div>
+            </div>
+            
+        </div>
         <div class="backgroud-footer">
             <video src="assets/Image/footer/video-animation-earth.mp4" id="video-footer" autoplay muted preload="" loop
-                class="animated fadeIn lazyloading go"></video>
-            <div class="bg-ft animated fadeIn delay-1000 lazyload go">
+                class="animated fadeOut delay-1000 lazyload"></video>
+            <div class="bg-ft animated fadeIn delay-1500 lazyload ">
                 <img src="assets/Image/footer/backround-footer.webp" alt="">
+            </div>
+            <div class="bg-ft-tablet animated fadeIn delay-1500 lazyload">
+                <img src="assets/Image/footer/background-footer-tablet.webp" alt="">
+            </div>
+            <div class="bg-ft-mobile animated fadeIn delay-1500 lazyload">
+                <img src="assets/Image/footer/backround-footer-mobile.webp" alt="">
             </div>
         </div>
         <div class="wrap-box-footer">
             <div class="box-footer">
-                <div class="box-item ">
+                <div class="box-item animated bounceInUp delay-1600 lazyload">
                     <div class="item-content">
                         Tổ chức Anh Quốc gần 30 năm kinh nghiệm
                     </div>
-                    <div class="item-img">
+                    <div class="item-img animated animated bounceInUp delay-1900 lazyload">
                         <img src="assets/Image/footer/a-3.png" alt="">
                     </div>
                 </div>
                 <div class="box-item">
-                    <div class="box-half item-left">
+                    <div class="box-half item-left animated bounceInRight delay-1700 lazyload">
                         <div class="item-content">
                             Đảm bảo kết quả đầu ra: Hơn 90% học viên đạt điểm gần tuyệt đối trong các kỳ thi Cambridge
                         </div>
@@ -1247,7 +1523,7 @@
                             <img src="assets/Image/footer/a-2.svg" alt="">
                         </div>
                     </div>
-                    <div class="box-half item-right">
+                    <div class="box-half item-right animated bounceInLeft delay-1700 lazyload">
                         <div class="item-img">
                             <img src="assets/Image/footer/a-4.png" alt="">
                         </div>
@@ -1260,15 +1536,15 @@
 
                 </div>
                 <div class="box-item">
-                    <div class="box-half item-left">
+                    <div class="box-half item-left animated bounceInRight delay-1700 lazyload">
                         <div class="item-content">
                             Nền tảng học tập cho phép hỗ trợ cá nhân hóa
                         </div>
-                        <div class="item-img">
+                        <div class="item-img  ">
                             <img src="assets/Image/footer/a-2.png" alt="">
                         </div>
                     </div>
-                    <div class="box-half item-right">
+                    <div class="box-half item-right animated bounceInLeft delay-1700 lazyload">
                         <div class="item-img">
                             <img src="assets/Image/footer/a-5.svg" alt="">
                         </div>
@@ -1281,27 +1557,33 @@
 
                 </div>
                 <div class="box-item-center">
-                    <div class="item-img">
+                    <div class="item-img animated delay-1100 lazyload">
                         <img src="assets/Image/footer/a-main.svg" alt="">
 
                     </div>
-                    <div class="item-img-bg bg-1"></div>
-                    <div class="item-img-bg bg-2"></div>
-                    <div class="item-img-bg bg-3"></div>
-                    <div class="item-img-bg bg-4"></div>
+                    <div class="item-img-bg bg-1 animated delay-1500 lazyload"></div>
+                    <div class="item-img-bg bg-2 animated delay-1400 lazyload"></div>
+                    <div class="item-img-bg bg-3 animated delay-1300 lazyload"></div>
+                    <div class="item-img-bg bg-4 animated delay-1200 lazyload"></div>
                 </div>
 
 
             </div>
         </div>
-        <div class="reg-form">
+        <div class="reg-form animated bounceInLeft delay-1500 lazyload">
             <div class="form-title">
                 <div class="title">
                     Tư vấn & kiểm tra
                     <br>
-                    Miễn phí
+                    <span>Miễn phí</span>
+                </div>
+                <div class="text-shadow">
+                    Tư vấn & kiểm tra
+                    <br>
+                    <span>Miễn phí</span>
                 </div>
             </div>
+            
             <form action="" class="form-content">
                 <div class="form-control">
                     <input type="text" placeholder="Họ và tên phụ huynh" id="name">
@@ -1362,7 +1644,26 @@
 
 
     <!-- End Footer -->
+    <section class="utilities-btn">
+        <div class="up-to-top">
+            <a href="#">
+                <img src="assets/Image/icon/hotline/arrow-up.svg" alt="">
+            </a>
+        </div>
+        <div class="hotline">
+            <div class="phone-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+                </svg>
 
+            </div>
+            <div class="sub-phone">
+                <a href="tel:0855554555">Hotline: 085-555-4555</a>
+            </div>
+        </div>
+
+    </section>
 
     <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/JQuery/jquery.min.js"></script>
@@ -1382,6 +1683,18 @@
         // $(document).ready(function () {
         //     $('.your-class').slick();
         // });
+        const hotline = document.querySelector(".hotline");
+        const subPhone = document.querySelector(".sub-phone");
+
+        hotline.addEventListener("click", () => {
+            if (!hotline.classList.contains("active")) {
+                hotline.classList.add("active");
+                subPhone.classList.add("active");
+            } else {
+                hotline.classList.remove("active");
+                subPhone.classList.remove("active");
+            }
+        });
 
     </script>
 </body>
