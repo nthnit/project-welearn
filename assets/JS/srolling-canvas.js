@@ -100,7 +100,6 @@ const drawCanvas = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    // load fisrt image
     console.log("Draw Canvas");
     drawCanvas();
 });

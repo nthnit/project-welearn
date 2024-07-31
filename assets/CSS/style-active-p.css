@@ -73,9 +73,6 @@ body {
 }
 .transition {
     transition-duration: .15s;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 .nav-bar{
@@ -102,9 +99,6 @@ body {
     line-height: 1.5rem;
     padding: .875rem;
     transition-duration: .15s;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     width: 100%;
     height: 56px;
@@ -112,6 +106,14 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+}
+.nav-bar .item.active {
+    background-color: #0071ce;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-bar .item.active svg path {
+    fill: #fff;
 }
 .nav-bar .item:first-child{
     margin: 0;
@@ -128,10 +130,8 @@ body {
 .nav-bar .feedback:hover svg path{
     fill: #fff;
 }
-.nav-bar  .about{
-    background-color: #0071ce;
-    color: #fff;
-    font-weight: 600;
+.nav-bar  .about svg path{
+    fill: #8f90a6;
 }
 .nav-bar  .about svg {
     fill: #fff;
@@ -186,6 +186,7 @@ body {
 @media screen and  (min-width: 1280px){
     .container {
     max-width: 1280px;
+    max-width: 1150px;
 }
 }
 

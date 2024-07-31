@@ -195,6 +195,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .audio .book-list .book {
     width: 30%;
@@ -210,4 +211,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 1099.98px) {
+    .audio .book-list {
+        margin-bottom: 10vh;
+    }
+}
+.userInfo .avatar {
+    background: url(../Image/chooose-user/f93e0711b4851adb4394.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

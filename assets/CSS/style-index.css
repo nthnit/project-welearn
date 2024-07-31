@@ -1724,9 +1724,6 @@ header .fixed-nav {
         margin: 4rem auto;
 
     }
-    .accordion-img .accordion-body {
-        /* max-width: 200px; */
-    }
     .accordion-img #collapseFour .accordion-body {
         bottom: -10px;
     }
@@ -2605,7 +2602,9 @@ header .fixed-nav {
     /* top: -2px; */
     object-fit: cover;
 }
-
+.bg-ft-tablet img {
+    height: 140vh;
+}
 /* FOOTER CONTENT BOX */
 .copy-right {
     padding-bottom: 1rem;

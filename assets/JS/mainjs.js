@@ -1,56 +1,5 @@
 
 
-
-
-// function ready() {
-//     if ('intersectionObserver' in window) {
-//         var observer = new IntersectionObserver(function (entries) {
-//             entries.forEach(function (entry) {
-//                 if (entry.isIntersecting) {
-//                     console.log('intersecting');
-//                 } else {
-//                     console.log('not intersecting');
-//                 }
-//             });
-//         }, {
-//             rootMargin: '0px 0px 0px 0px',
-//             threshold: 0
-//         });
-//         var elements = document.querySelectorAll('.js-scroll-trigger');
-//         for (var i = 0; i < elements.length; i++) {
-//             observer.observe(elements[i]);
-//         }
-        
-//     }
-// }
-
-// document.addEventListener('DOMContentLoaded', ready);
-
-// Tạo một IntersectionObserver
-// const observer = new IntersectionObserver((entries, observer) => {
-//     entries.forEach(entry => {
-//       if (entry.intersectionRatio > 0) {
-//         // Khi phần tử trở nên nhìn thấy
-//         const lazyElement = entry.target;
-  
-  
-//         // Thêm lớp "go"
-//         lazyElement.classList.add("go");
-  
-//         // Ngừng theo dõi phần tử đã tải
-//         observer.unobserve(lazyElement);
-        
-//       }
-//     });
-//   });
-  
-//   // Lấy tất cả các phần tử cần tải lười biếng
-//   const lazyElements = document.querySelectorAll('.lazyload');
-  
-//   // Đặt IntersectionObserver cho mỗi phần tử
-//   lazyElements.forEach(element => {
-//     observer.observe(element);
-//   });
   
 const elementsToExpand = document.querySelectorAll(".lazyload");
 
@@ -129,10 +78,9 @@ subMenus.forEach((subMenu, index) => {
 // Hàm mở hoặc đóng menu di động
 function openMenuMobile() {
   var mobileNav = document.querySelector('.mobile-nav'); // Chọn phần tử chứa menu di động
-
+  event.preventDefault()
   // Kiểm tra trạng thái hiện tại của menu
   if (mobileNav.classList.contains('d-none')) {
-      // Nếu menu đang ẩn, hiển thị menu
       mobileNav.classList.remove('d-none');
   } else {
       // Nếu menu đang hiển thị, ẩn menu

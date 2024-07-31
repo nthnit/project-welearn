@@ -2,29 +2,43 @@
     background-image: url(../Image/chooose-user/bg-account.0d1c3eeb60f9c857ece7.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover !important;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    
+    padding: 1rem;
+    /* margin: 0; */
 }
-
-
-.choose-user .title h1{
+.choose-user .row .title h1 {
     padding: 40px;
     color: #FFF;
     font-size: 3.5rem;
 }
 
+
 .choose-user .user {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     padding-top: 50px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
+}
+@media screen and (max-width: 1578.98px) {
+    /* .choose-user .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+    .choose-user .logout-btn {
+        margin-top: 150px;
+        
+    } */
 }
 .choose-user .user .avatar {
     width: 120px;
@@ -62,10 +76,10 @@
 }
 .choose-user .select-user {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .choose-user .logout-btn {
-    margin-top: 180px;
+    /* margin-top: 180px; */
     justify-content: center;
     align-items: center;
     
