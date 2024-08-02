@@ -18,14 +18,14 @@ let imgaeUrlMobile;
 const language = document.getElementsByTagName("html")[0].getAttribute("lang");
 
 if (!language) {
-    imageUrlDesktop = "/BTL-course-project/assets/kv-animation/desktop/";
-    imgaeUrlMobile = "/BTL-course-project/assets/kv-animation/m/";
+    imageUrlDesktop = "../assets/kv-animation/desktop/";
+    imgaeUrlMobile = "../assets/kv-animation/m/";
 } else if (language === "en") {
-    imageUrlDesktop = "/BTL-course-project/assets/kv-animation/desktop/";
-    imgaeUrlMobile = "/BTL-course-project/assets/kv-animation/m/";
+    imageUrlDesktop = "../assets/kv-animation/desktop/";
+    imgaeUrlMobile = "../assets/kv-animation/m/";
 } else {
-    imageUrlDesktop = "/BTL-course-project/assets/kv-animation/desktop/";
-    imgaeUrlMobile = "/BTL-course-project/assets/kv-animation/m/";
+    imageUrlDesktop = "../assets/kv-animation/desktop/";
+    imgaeUrlMobile = "../assets/kv-animation/m/";
 }
 
 if (document.body.clientWidth > 700) {
